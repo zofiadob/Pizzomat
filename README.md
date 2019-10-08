@@ -2,6 +2,6 @@
 Bardzo fajny projekt na APO (UAM)
 
 Skład osobowy:
-- Zofia Dobrowolska
-- Maciej Grochowski
-- Katarzyna Makohon
+- Zofia Dobrowolska (434672)
+- Maciej Grochowski (434692)
+- Katarzyna Makohon (434744)
