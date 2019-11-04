@@ -43,17 +43,17 @@ Scenariusz główny (ścieżka podstawowa):
 
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
-  9a. Klient wybiera płatność gotówką. 
-  10a. Pizzomat wyświetla informację proszącą o przekazanie pieniędzy do maszyny. 
-  11a. System odbiera pieniądze i zmienia stan kasy w swojej pamięci.
-  12a. System dokonuje niezbędnych obliczeń i decyduje czy wydać resztę czy nie. 
-  13a. System wydaje resztę i ponownie aktualizuje stan kasy. *(powrót do punktu 13)*
+  9a. Klient wybiera płatność gotówką.   
+  10a. Pizzomat wyświetla informację proszącą o przekazanie pieniędzy do maszyny.  
+  11a. System odbiera pieniądze i zmienia stan kasy w swojej pamięci.  
+  12a. System dokonuje niezbędnych obliczeń i decyduje czy wydać resztę czy nie.  
+  13a. System wydaje resztę i ponownie aktualizuje stan kasy. *(powrót do punktu 13)*  
 
-  14a*. System nie wydaje reszty. 
-
-  12b. System odbiera informację o niepomyślnym zakończeniu płatności. 
-  13b. System powiadamia klienta o problemie. 
-  14b. System proponuje wybór metody płatności. *(powrót do punktu 8)* 
+  14a*. System nie wydaje reszty.  
+  
+  12b. System odbiera informację o niepomyślnym zakończeniu płatności.  
+  13b. System powiadamia klienta o problemie.  
+  14b. System proponuje wybór metody płatności. *(powrót do punktu 8)*  
 
 Wymagania specjalne:
 --------------------
