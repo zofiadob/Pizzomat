@@ -17,11 +17,11 @@ Główni odbiorcy i oczekiwania względem systemu:
 
 Warunki wstępne:
 ----------------
-Dostawca otrzymał i przywiózł produkty mające zostać dostarczone do Pizzomatu. Dostawca jest zidentyfikowany i przeprowadzone zostało uwierzytelnienie.
+Dostawca otrzymał i przywiózł produkty mające zostać dostarczone do Pizzomatu.
 
 Warunki końcowe:
 ----------------
-Dostawa jest bezpieczna. Maszyna została poprawnie zamknięta. W magazynie maszyny znajdują się przewiezione produkty. Stan pamięci maszyny zgadza się z stanem faktycznym jej magazynu. Nie występują braki produktów ani nominałów. Nadmiar gotówki został pobrany przez dostawcę.
+Maszyna została poprawnie zamknięta. W magazynie maszyny znajdują się przewiezione produkty. Stan pamięci maszyny zgadza się z stanem faktycznym jej magazynu. Nie występują braki produktów ani nominałów. Nadmiar gotówki został pobrany przez dostawcę.
 
 Scenariusz główny (ścieżka podstawowa):
 ---------------------------------------
