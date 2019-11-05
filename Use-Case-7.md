@@ -26,48 +26,45 @@ Dostawa jest bezpieczna. Maszyna została poprawnie zamknięta. W magazynie masz
 Scenariusz główny (ścieżka podstawowa):
 ---------------------------------------
 
-  1. Dostawca przychodzi do Pizzomatu z towarami, które chce dostarczyć.
-  2. Dostawca uwierzytelnia się.
-  3. Dostawca wydaje polecenie zdjęcia blokad.
-  4. System zwalnia blokady i otwiera się mechanicznie.
-  5. Dostawca fizycznie wprowadza produkt do części magazynowej.
-  6. Dostawca wprowadza identyfikator produktu do systemu.
-*Dostawca powtarza kroki 5-6 aż wprowadzone zostaną wszystkie produkty.*
-  7. System oblicza obecny stan magazynu na podstawie poprzednich danych oraz wprowadzonych zmian.
-  8. Dostawca porównuje stan faktyczny z stanem systemu.
-  9. Dostawca uzupełnia brakujące i pobiera nadmiarowe nominały.
-  10. Dostawca wprowadza zmiany w gotówce na stanie magazynu. 
-  11. Dostawca wydaje polecenie zamknięcia maszyny i uruchomienia blokad bezpieczeństwa.
-  12. System zapisuje w pamięci wewnętrznej datę dostawy, identyfikator dostawcy i zmiany w magazynie.
-  13. Dostawca odchodzi.
+  1. Dostawca wydaje polecenie zdjęcia blokad.
+  2. System zwalnia blokady i otwiera się mechanicznie.
+  3. Dostawca fizycznie wprowadza produkt do części magazynowej.
+  4. Dostawca wprowadza identyfikator produktu do systemu.
+*Dostawca powtarza kroki 4-5 aż wprowadzone zostaną wszystkie produkty.*
+  5. System oblicza obecny stan magazynu na podstawie poprzednich danych oraz wprowadzonych zmian.
+  6. Dostawca porównuje stan faktyczny z stanem systemu.
+  7. Dostawca uzupełnia brakujące i pobiera nadmiarowe nominały.
+  8. Dostawca wprowadza zmiany w gotówce na stanie magazynu. 
+  9. Dostawca wydaje polecenie zamknięcia maszyny i uruchomienia blokad bezpieczeństwa.
+  10. System zapisuje w pamięci wewnętrznej datę dostawy, identyfikator dostawcy i zmiany w magazynie.
 
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
 *a. W dowolnym czasie, dotyczy sytuacji kiedy system zawiesza się:
-a) Dostawca restartuje system, loguje się ponownie oraz sprawdza stan systemu
-b) System odtwarza stan przed zawieszeniem się
-b1) System wykrywa błędy: Dostawca rozpoczyna procedurę wprowadzenia danych o dostawie od nowa.
+1. Dostawca restartuje system, loguje się ponownie oraz sprawdza stan systemu
+2. System odtwarza stan przed zawieszeniem się
+2a. System wykrywa błędy: Dostawca rozpoczyna procedurę wprowadzenia danych o dostawie od nowa.
 
 2a. - Błędny identyfikator
 System sygnalizuje błąd i odrzuca próbę logowania się. Po trzech nieskutecznych próbach logowania, system blokuje mechanizm logowania na 5 minut.
 
  4a - Maszynowe zdjęcie blokad nie powodzi się:
- System musi poinformować o usterce dostawcę, umożliwić mu restart Pizzomatu oraz przekazać mu dane kontaktowe do serwisanta.
-a) Dostawca restartuje system, loguje się i ponawia żądanie
-b1) Ponowne żądanie otwarcia powodzi się - dostawca wraca do 5. oraz informuje o problemie serwisanta
-b2) Błąd powtarza się - dostawca informuje o problemie serwisanta oraz odkłada dostawę w czasie (przechodzi do 13.)
+1. System musi poinformować o usterce dostawcę, umożliwić mu restart Pizzomatu oraz przekazać mu dane kontaktowe do serwisanta.
+2. Dostawca restartuje system, loguje się i ponawia żądanie
+3. Ponowne żądanie otwarcia powodzi się - dostawca wraca do 5. oraz informuje o problemie serwisanta
+4. Błąd powtarza się - dostawca informuje o problemie serwisanta oraz odkłada dostawę w czasie (przechodzi do 13.)
 
 5-6a Do wprowadzenia jest kilka produktów tego samego typu, o identycznym identyfikatorze.
-a) Dostawca fizycznie wprowadza wszystkie produkty do magazynu
-b) Dostawca wprowadza identyfikator produktu oraz ilość produktów.
+1. Dostawca fizycznie wprowadza wszystkie produkty do magazynu
+2. Dostawca wprowadza identyfikator produktu oraz ilość produktów.
 
 8a Któryś z produktów z uwagi na zdatność do spożycia lub inne usterki powinien zostać usunięty z magazynu
-a) Dostawca fizycznie usuwa produkt
-b) Dostawca wprowadza identyfikator oraz ilość usuwanych produktów
+1. Dostawca fizycznie usuwa produkt
+2. Dostawca wprowadza identyfikator oraz ilość usuwanych produktów
 
 12a. Zasoby pamięci wewnętrznej są bardzo małe (Poniżej 50MB wolnej pamięci)
-a) System wyświetla dostawcy komunikat o brakach wolnej pamięci oraz podaje kontakt do serwisanta
-b) Serwisant podczas następnego okresowego przeglądu (patrz use case 10, w ramach prac konserwacyjnych) eksportuje dane do zewnętrznej pamięci oraz czyści pamięć wewnętrzną.
+1. System wyświetla dostawcy komunikat o brakach wolnej pamięci oraz podaje kontakt do serwisanta
+2. Serwisant podczas następnego okresowego przeglądu (patrz use case 10, w ramach prac konserwacyjnych) eksportuje dane do zewnętrznej pamięci oraz czyści pamięć wewnętrzną.
 
 
 Wymagania specjalne:
@@ -76,10 +73,6 @@ Wymagania specjalne:
   - Czytelny ekran dotykowy umożliwiający przekazywanie komunikatów przez system oraz przekazywanie danych na temat dostawy do systemu. Tekst powinien być na nim widoczny z odległości co najmniej 1 metra.
   - Magazyn umożliwiający przechowywanie produktów spożywczych w sposób bezpieczny.
   - Autoryzacja dostawcy musi być dokonana w ciągu 5 sekund w 99% przypadków.
-
-  - ...
-
-  - ...
 
 Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 ---------------------------------------------------------------
