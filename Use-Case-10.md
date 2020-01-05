@@ -26,7 +26,7 @@ Scenariusz główny (ścieżka podstawowa):
 2. Serwisant zdejmuje wszelkie blokady.
 3. Serwisant skutecznie dostaje się do wszystkich podsystemów.
 4. Serwisant sprawdza stan i działanie wszystkich podsystemów.
-5. Serwisant wykonuje wszystkie niezbędnę prace konserwacyjne.
+5. Serwisant wykonuje wszystkie niezbędne prace konserwacyjne.
 6. Serwisant zakłada z powrotem wszystkie blokady.
 7. Serwisant wpisuje w systemie date, w którą przegląd został wykonany.
 8. Serwisant wpisuje w systemie swój identyfikator.
@@ -49,7 +49,7 @@ Dla zapewnienia poprawnego zapisywania konserwacji, niezbędne jest aby wszystki
 2. System wyświetla komunikat o błędzie.
 3. Serwisant dokonuje ponownej próby wpisania kodu.
 
- 2a. Serwisant nie może przejść do dalszych ktoków z powodu uszkodzenia blokad.
+2a. Serwisant nie może przejść do dalszych kroków z powodu uszkodzenia blokad.
 
 1. Serwisant usuwa wadliwe blokady.
 2. Serwisant zakłada nowe blokady bądź naprawia i zakłada stare blokady.
@@ -68,6 +68,7 @@ Dla zapewnienia poprawnego zapisywania konserwacji, niezbędne jest aby wszystki
 4. Serwisant dokonuje poprawnego podania identyfikatora.
 
 8b. Serwisant podaje błędny indetyfikator (więcej niż 3 razy).
+
 1. System wyświetla komunikat o przekroczonej liczbie prób dostępu. 
 2. System prosi o ponowne podanie kodu autoryzacyjnego. 
 3. Serwisant podaje poprawny kod autoryzacyjny.
@@ -78,8 +79,8 @@ Dla zapewnienia poprawnego zapisywania konserwacji, niezbędne jest aby wszystki
 Wymagania specjalne:
 --------------------
 
-- Pizzomat musi posiadać ekran dotykowy
-- Możliwość interfejsu wielojęzykowego
+- Pizzomat musi posiadać ekran dotykowy.
+- Możliwość interfejsu wielojęzykowego.
 - Autoryzacja Serwisanta musi być dokonana w czasie 30 sekund.
 
 Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
@@ -87,7 +88,7 @@ Wymagania technologiczne oraz ograniczenia na wprowadzane dane:
 
 1a. Serwisant autoryzuje się poprzez wpisanie specjalnego 10-cyfrowego kodu.
 
-8a.  Indentyfikator Serwisanta składa się z 8-cyfrowego ciągu znaków i liczb oraz musi istnieć w systemie.
+8a. Indentyfikator Serwisanta składa się z ciągu długości 8 (znaków i liczb) oraz musi istnieć w systemie.
 
 Kwestie otwarte:
 ----------------
