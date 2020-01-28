@@ -36,6 +36,7 @@ Scenariusz główny (ścieżka podstawowa):
 12. System rejestruje podane dane przeglądu.
 13. System informuje serwisanta, że podane dane zostały zapisane.
 
+
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
 
