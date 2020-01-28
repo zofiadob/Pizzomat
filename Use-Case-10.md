@@ -23,15 +23,19 @@ Scenariusz główny (ścieżka podstawowa):
 ---------------------------------------
 
 1. Serwisant autoryzuje się w systemie Pizzomatu.
-2. Serwisant zdejmuje wszelkie blokady.
-3. Serwisant skutecznie dostaje się do wszystkich podsystemów.
-4. Serwisant sprawdza stan i działanie wszystkich podsystemów.
-5. Serwisant wykonuje wszystkie niezbędne prace konserwacyjne.
-6. Serwisant zakłada z powrotem wszystkie blokady.
-7. Serwisant wpisuje w systemie date, w którą przegląd został wykonany.
-8. Serwisant wpisuje w systemie swój identyfikator.
-9. Serwisant potwierdza w systemie, że przegląd został wykonany.
-10. System informuje serwisanta, że podane dane zostały zapisane.
+2. Serwisant wydaje polecenie zdjęcia blokad.
+3. System informuje Serwisanta o pomyślnym zdjęciu blokad.
+4. Serwisant skutecznie dostaje się do wszystkich podsystemów.
+5. Serwisant sprawdza stan i działanie wszystkich podsystemów.
+6. Serwisant wykonuje wszystkie niezbędne prace konserwacyjne.
+7. Serwisant wydaje polecenie założenia wszystkich blokad.
+8. System informuje Serwisanta o pomyślnym założeniu wszystkich blokad.
+9. Serwisant wpisuje w systemie date, w którą przegląd został wykonany.
+10. Serwisant wpisuje w systemie swój identyfikator.
+11. Serwisant potwierdza w systemie, że przegląd został wykonany.
+12. System rejestruje podane dane przeglądu.
+13. System informuje serwisanta, że podane dane zostały zapisane.
+
 
 Rozszerzenia (ścieżki alternatywne):
 ------------------------------------
